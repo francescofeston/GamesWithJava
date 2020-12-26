@@ -11,7 +11,7 @@ public class Player {
         boolean qualified = false;
         while (!qualified) {
             guessedIntString = JOptionPane.showInputDialog("Enter a guess between 1 and 100");
-            qualified = isQualifiedData(guessedInt);
+            qualified = isQualifiedData(guessedIntString);
             System.out.println("Player: my guess is " + guessedInt);
             return guessedInt;
         }
@@ -32,5 +32,9 @@ public class Player {
 
     public boolean isInteger(String inputString){
         
+    }
+
+    public void shwMsg(String msgStr){
+        System.out.println(msgStr);
     }
 }
